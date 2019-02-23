@@ -1,9 +1,5 @@
 import React from 'react'
-import { NavLink, Switch, Route } from 'react-router-dom';
-import Home from  './pages/Home.jsx'
-import Feed from './pages/Feed.jsx'
-import FAQ from  './pages/FAQ.jsx'
-import Body from './Body.jsx'
+import { NavLink } from 'react-router-dom';
 
 const style = {
     marginLeft : '2em',
@@ -24,12 +20,6 @@ const Navbar = () =>(
                 </div>
             </nav>
         </div>
-        <Switch>
-            <Route path = "/default" component = {Body}/>
-            <Route path = "/home" component = {Home} />
-            <Route path = "/feed" component = {Feed}/>
-            <Route path = "/faq"  component = {FAQ} />
-        </Switch>
     </div>
 )
 
